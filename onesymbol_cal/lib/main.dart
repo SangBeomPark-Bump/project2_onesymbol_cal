@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:onesymbol_cal/addition.dart';
-import 'package:onesymbol_cal/division.dart';
-import 'package:onesymbol_cal/home.dart';
-import 'package:onesymbol_cal/multiplication.dart';
-import 'package:onesymbol_cal/subtraction.dart';
+import 'package:onesymbol_cal/view/addition.dart';
+import 'package:onesymbol_cal/view/division.dart';
+import 'package:onesymbol_cal/view/home.dart';
+import 'package:onesymbol_cal/view/multiplication.dart';
+import 'package:onesymbol_cal/view/subtraction.dart';
 
 void main() {
   runApp(const MyApp());
