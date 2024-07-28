@@ -1,5 +1,5 @@
+import 'package:caltest/VM/mulvm.dart';
 import 'package:flutter/material.dart';
-import 'package:onesymbol_cal/VM/mulvm.dart';
 
 class MulPage extends StatefulWidget {
   const MulPage({super.key});
@@ -167,7 +167,7 @@ late  String num2;
                     onPressed: (){
                       beforecalR();
                       calResult();
-                      num1 = "";
+                      
                       num2 = "";
                       },
                     child: const Text("=")
@@ -205,11 +205,11 @@ String xClick(){
 
 
   String calResult() {
-    if (calMulcontroller.text.trim().isEmpty ||
-        calMulcontroller.text.trim().isEmpty) {
+    if (num1.isEmpty ||
+        num2.isEmpty) {
       errorSnackbar();
       }else{
-        Mul calR = Mul(beforecalR(),xClick());
+        Mul calR = Mul(num1,num2);
         calMulcontroller.text = calR.mulF();
       }return calMulcontroller.text;
         }
